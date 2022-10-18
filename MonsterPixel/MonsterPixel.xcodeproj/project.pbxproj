@@ -7,9 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D68D382028FC9519004015DE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D381F28FC9519004015DE /* DataManager.swift */; };
+		D68D382328FC962E004015DE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D382228FC962E004015DE /* WebService.swift */; };
+		D68D763528FE4C0400347122 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D68D763428FE4C0400347122 /* Minecraft.ttf */; };
+		D68D763728FE4C1500347122 /* 04B_30__.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D68D763628FE4C1500347122 /* 04B_30__.ttf */; };
+		D68D763928FF129200347122 /* AVSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D763828FF129200347122 /* AVSound.swift */; };
+		D68D763C28FF1AF100347122 /* classic-arcade-video-game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D68D763B28FF1AF000347122 /* classic-arcade-video-game.mp3 */; };
+		D6A830F928F45679006C5F04 /* MonsterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A830F828F45679006C5F04 /* MonsterModel.swift */; };
+		D6A830FF28F45B7D006C5F04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A830FE28F45B7D006C5F04 /* HomeView.swift */; };
+		D6A8310228F73897006C5F04 /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310128F73897006C5F04 /* ViewCoding.swift */; };
+		D6A8310428F7540B006C5F04 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310328F7540B006C5F04 /* BookViewController.swift */; };
+		D6A8310628F75750006C5F04 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310528F75750006C5F04 /* BookView.swift */; };
+		D6A8310B28F76239006C5F04 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310A28F76239006C5F04 /* CollectionViewCell.swift */; };
+		D6A8310D28F79C0E006C5F04 /* MonsterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310C28F79C0E006C5F04 /* MonsterViewController.swift */; };
+		D6A8310F28F79C1E006C5F04 /* MonsterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310E28F79C1E006C5F04 /* MonsterView.swift */; };
+		D6A8311128F85683006C5F04 /* BookDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8311028F85683006C5F04 /* BookDelegate.swift */; };
+		D6A8311328F85696006C5F04 /* HomeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8311228F85696006C5F04 /* HomeDelegate.swift */; };
 		D6CEFE6128F44D580098E2C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE6028F44D580098E2C5 /* AppDelegate.swift */; };
 		D6CEFE6328F44D580098E2C5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE6228F44D580098E2C5 /* SceneDelegate.swift */; };
-		D6CEFE6528F44D580098E2C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE6428F44D580098E2C5 /* ViewController.swift */; };
+		D6CEFE6528F44D580098E2C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE6428F44D580098E2C5 /* HomeViewController.swift */; };
 		D6CEFE6B28F44D580098E2C5 /* MonsterPixel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE6928F44D580098E2C5 /* MonsterPixel.xcdatamodeld */; };
 		D6CEFE6D28F44D590098E2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CEFE6C28F44D590098E2C5 /* Assets.xcassets */; };
 		D6CEFE7028F44D590098E2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CEFE6E28F44D590098E2C5 /* LaunchScreen.storyboard */; };
@@ -36,10 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D68D381F28FC9519004015DE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		D68D382228FC962E004015DE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		D68D763428FE4C0400347122 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		D68D763628FE4C1500347122 /* 04B_30__.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B_30__.ttf; sourceTree = "<group>"; };
+		D68D763828FF129200347122 /* AVSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSound.swift; sourceTree = "<group>"; };
+		D68D763B28FF1AF000347122 /* classic-arcade-video-game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "classic-arcade-video-game.mp3"; sourceTree = "<group>"; };
+		D6A830F828F45679006C5F04 /* MonsterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterModel.swift; sourceTree = "<group>"; };
+		D6A830FE28F45B7D006C5F04 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D6A8310128F73897006C5F04 /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
+		D6A8310328F7540B006C5F04 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		D6A8310528F75750006C5F04 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		D6A8310A28F76239006C5F04 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D6A8310C28F79C0E006C5F04 /* MonsterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterViewController.swift; sourceTree = "<group>"; };
+		D6A8310E28F79C1E006C5F04 /* MonsterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterView.swift; sourceTree = "<group>"; };
+		D6A8311028F85683006C5F04 /* BookDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDelegate.swift; sourceTree = "<group>"; };
+		D6A8311228F85696006C5F04 /* HomeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDelegate.swift; sourceTree = "<group>"; };
 		D6CEFE5D28F44D580098E2C5 /* MonsterPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CEFE6028F44D580098E2C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CEFE6228F44D580098E2C5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D6CEFE6428F44D580098E2C5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6CEFE6428F44D580098E2C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D6CEFE6A28F44D580098E2C5 /* MonsterPixel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MonsterPixel.xcdatamodel; sourceTree = "<group>"; };
 		D6CEFE6C28F44D590098E2C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6CEFE6F28F44D590098E2C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,6 +108,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D68D381E28FC94F7004015DE /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				D6CEFE6928F44D580098E2C5 /* MonsterPixel.xcdatamodeld */,
+				D68D381F28FC9519004015DE /* DataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D68D382128FC9620004015DE /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				D68D382228FC962E004015DE /* WebService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D68D763028FE4BBE00347122 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D68D763628FE4C1500347122 /* 04B_30__.ttf */,
+				D68D763428FE4C0400347122 /* Minecraft.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		D68D763A28FF12B700347122 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D68D763B28FF1AF000347122 /* classic-arcade-video-game.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		D6A830F728F4566A006C5F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6A830F828F45679006C5F04 /* MonsterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6A830FD28F456AD006C5F04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6A830FE28F45B7D006C5F04 /* HomeView.swift */,
+				D6A8310528F75750006C5F04 /* BookView.swift */,
+				D6A8310A28F76239006C5F04 /* CollectionViewCell.swift */,
+				D6A8310E28F79C1E006C5F04 /* MonsterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6A8310028F5BA68006C5F04 /* Suport */ = {
+			isa = PBXGroup;
+			children = (
+				D6A8310128F73897006C5F04 /* ViewCoding.swift */,
+				D6A8311028F85683006C5F04 /* BookDelegate.swift */,
+				D6A8311228F85696006C5F04 /* HomeDelegate.swift */,
+				D68D763828FF129200347122 /* AVSound.swift */,
+			);
+			path = Suport;
+			sourceTree = "<group>";
+		};
 		D6CEFE5428F44D580098E2C5 = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +195,13 @@
 		D6CEFE5F28F44D580098E2C5 /* MonsterPixel */ = {
 			isa = PBXGroup;
 			children = (
+				D68D382128FC9620004015DE /* WebService */,
+				D68D381E28FC94F7004015DE /* CoreData */,
 				D6CEFE9528F44DA00098E2C5 /* Resource */,
+				D6A8310028F5BA68006C5F04 /* Suport */,
 				D6CEFE9328F44D8A0098E2C5 /* Aplication */,
 				D6CEFE9428F44D950098E2C5 /* Source */,
 				D6CEFE7128F44D590098E2C5 /* Info.plist */,
-				D6CEFE6928F44D580098E2C5 /* MonsterPixel.xcdatamodeld */,
 			);
 			path = MonsterPixel;
 			sourceTree = "<group>";
@@ -138,9 +236,9 @@
 		D6CEFE9428F44D950098E2C5 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D6CEFE9628F44DA80098E2C5 /* Model */,
+				D6A830F728F4566A006C5F04 /* Model */,
 				D6CEFE9728F44DB00098E2C5 /* ViewController */,
-				D6CEFE9828F44DB90098E2C5 /* View */,
+				D6A830FD28F456AD006C5F04 /* View */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -148,31 +246,21 @@
 		D6CEFE9528F44DA00098E2C5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D68D763A28FF12B700347122 /* sounds */,
+				D68D763028FE4BBE00347122 /* fonts */,
 				D6CEFE6C28F44D590098E2C5 /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
 		};
-		D6CEFE9628F44DA80098E2C5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		D6CEFE9728F44DB00098E2C5 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D6CEFE6428F44D580098E2C5 /* ViewController.swift */,
+				D6CEFE6428F44D580098E2C5 /* HomeViewController.swift */,
+				D6A8310328F7540B006C5F04 /* BookViewController.swift */,
+				D6A8310C28F79C0E006C5F04 /* MonsterViewController.swift */,
 			);
 			path = ViewController;
-			sourceTree = "<group>";
-		};
-		D6CEFE9828F44DB90098E2C5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +273,7 @@
 				D6CEFE5928F44D580098E2C5 /* Sources */,
 				D6CEFE5A28F44D580098E2C5 /* Frameworks */,
 				D6CEFE5B28F44D580098E2C5 /* Resources */,
+				D6FD706528F453EE007F21DF /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -279,7 +368,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D68D763C28FF1AF100347122 /* classic-arcade-video-game.mp3 in Resources */,
+				D68D763528FE4C0400347122 /* Minecraft.ttf in Resources */,
 				D6CEFE7028F44D590098E2C5 /* LaunchScreen.storyboard in Resources */,
+				D68D763728FE4C1500347122 /* 04B_30__.ttf in Resources */,
 				D6CEFE6D28F44D590098E2C5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,15 +392,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D6FD706528F453EE007F21DF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6CEFE5928F44D580098E2C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CEFE6528F44D580098E2C5 /* ViewController.swift in Sources */,
+				D6A8310628F75750006C5F04 /* BookView.swift in Sources */,
+				D68D382028FC9519004015DE /* DataManager.swift in Sources */,
+				D6CEFE6528F44D580098E2C5 /* HomeViewController.swift in Sources */,
 				D6CEFE6128F44D580098E2C5 /* AppDelegate.swift in Sources */,
+				D6A8310228F73897006C5F04 /* ViewCoding.swift in Sources */,
+				D6A8311128F85683006C5F04 /* BookDelegate.swift in Sources */,
 				D6CEFE6328F44D580098E2C5 /* SceneDelegate.swift in Sources */,
+				D68D763928FF129200347122 /* AVSound.swift in Sources */,
+				D6A830F928F45679006C5F04 /* MonsterModel.swift in Sources */,
+				D6A8310D28F79C0E006C5F04 /* MonsterViewController.swift in Sources */,
+				D6A8310428F7540B006C5F04 /* BookViewController.swift in Sources */,
+				D68D382328FC962E004015DE /* WebService.swift in Sources */,
 				D6CEFE6B28F44D580098E2C5 /* MonsterPixel.xcdatamodeld in Sources */,
+				D6A830FF28F45B7D006C5F04 /* HomeView.swift in Sources */,
+				D6A8310B28F76239006C5F04 /* CollectionViewCell.swift in Sources */,
+				D6A8310F28F79C1E006C5F04 /* MonsterView.swift in Sources */,
+				D6A8311328F85696006C5F04 /* HomeDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
