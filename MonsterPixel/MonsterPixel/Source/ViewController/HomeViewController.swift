@@ -13,8 +13,9 @@ class HomeViewController: UIViewController {
 
     var monstros: [Monster] = []
 
-    private var home = HomeView()
+    public var home = HomeView()
 
+    // MARK: enquanto a tela está carregando, essas instâncias são chamadas
     override func viewDidLoad() {
         super.viewDidLoad()
         applyViewCode()
@@ -22,6 +23,7 @@ class HomeViewController: UIViewController {
         monstros = DataManager.shared.monstros()
     }
 
+    // MARK: Quando a tela aparrecer, essa função é chamada
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         monsterGet()
@@ -54,13 +56,15 @@ extension HomeViewController: ViewCodeConfiguration {
 
     func configureViews() {
         home.translatesAutoresizingMaskIntoConstraints = false
-        playSound()
+        playSound(name: "retro_8_bit_repeating_016", exten: "mp3")
     }
 }
 
 // MARK: - Delegate
 
 extension HomeViewController: HomeDelegate {
+
+    // MARK: leva para o BookViewController
     func navigation() {
         let rootViewcontroller = BookViewController()
         let viewController = UINavigationController(rootViewController: rootViewcontroller)
@@ -69,6 +73,7 @@ extension HomeViewController: HomeDelegate {
         present(viewController, animated: true, completion: nil)
     }
 
+    // MARK: Pega o monstro, salva se houver mudanças e carrega a imagem
     func monsterGet() {
         Task {
             do {
@@ -77,7 +82,7 @@ extension HomeViewController: HomeDelegate {
 
                 monstros.append(monster)
                 DataManager.shared.save()
-                home.monsterImage.load(mostro: monster)
+                home.monsterImage.load(mostro: monster.self)
 
             } catch {
                 print(error)

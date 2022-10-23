@@ -10,20 +10,60 @@ import XCTest
 
 final class MonsterPixelTests: XCTestCase {
 
+    var homeMonster: HomeViewController!
+    var bookMonster: BookViewController!
+    var monsterMonster: MonsterViewController!
+    var monster = Monster()
+    var monsters : [Monster] = []
+
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+
     }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testHomeVC() throws {
+        homeMonster = HomeViewController()
+        homeMonster.viewDidLoad()
+        XCTAssertTrue(homeMonster.isViewLoaded)
+    }
+
+    func testGenarete() throws {
+        homeMonster = HomeViewController()
+        homeMonster.viewDidLoad()
+        let contando = homeMonster.monstros.count.hashValue
+        homeMonster.home.buttonGenarate.isPointerInteractionEnabled = true
+        homeMonster.home.buttonGenarate.isTouchInside
+        XCTAssertTrue(homeMonster.monstros.count.self > contando)
+    }
+
+    func testBookVC() throws {
+        homeMonster = HomeViewController()
+        homeMonster.viewDidLoad()
+        homeMonster.home.tapHere()
+        bookMonster = BookViewController()
+        XCTAssertTrue(bookMonster.isViewLoaded)
+    }
+
+    func testMonsterVC() throws {
+        homeMonster = HomeViewController()
+        homeMonster.viewDidLoad()
+        homeMonster.navigation()
+        bookMonster = BookViewController()
+        bookMonster.bookView.collectionView(
+            bookMonster.bookView.collection,
+            didSelectItemAt: IndexPath.init())
+        XCTAssertTrue(monsterMonster.isViewLoaded)
+    }
+
+    func testBookDelete() throws {
+        homeMonster = HomeViewController()
+        homeMonster.viewDidLoad()
+        homeMonster.navigation()
+        bookMonster = BookViewController()
+        bookMonster.bookView.collectionView(bookMonster.bookView.collection.self, didSelectItemAt: bookMonster.bookView.collection.indexPath(for: UICollectionViewCell())!)
     }
 
     func testPerformanceExample() throws {

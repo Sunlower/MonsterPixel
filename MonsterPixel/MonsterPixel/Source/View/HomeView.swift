@@ -35,7 +35,11 @@ class HomeView: UIView {
         let btnGenerator = UIButton(type: .custom)
         btnGenerator.setImage(UIImage(named: "gntBTN.png"), for: .normal)
         btnGenerator.setImage(UIImage(named: "gntBTN1.png"), for: .highlighted)
-        btnGenerator.addTarget(self, action: #selector(getMonster), for: .touchUpInside)
+        btnGenerator.addTarget(
+            self,
+            action: #selector(getMonster),
+            for: .touchUpInside
+        )
         return btnGenerator
     }()
 
@@ -141,10 +145,12 @@ extension HomeView: ViewCodeConfiguration {
     }
 
     @objc func tapHere () {
+        playSound(name: "mixkit-water-bubble-1317", exten: "wav")
         delegate?.navigation()
     }
 
     @objc func getMonster() {
+        playSound(name: "mixkit-water-bubble-1317", exten: "wav")
         delegate?.monsterGet()
     }
 }

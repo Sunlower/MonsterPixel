@@ -35,6 +35,7 @@ class MonsterViewController: UIViewController {
     }
 
     @objc func share() {
+        playSound(name: "mixkit-water-bubble-1317", exten: "wav")
         guard let acitivityItem = monsterView.uiImage.image else {
             return
         }
@@ -48,6 +49,7 @@ class MonsterViewController: UIViewController {
     }
 
     @objc func back() {
+        playSound(name: "mixkit-water-bubble-1317", exten: "wav")
         self.dismiss(animated: true)
     }
 }
@@ -79,7 +81,12 @@ extension MonsterViewController: ViewCodeConfiguration {
     func configureViews() {
         monsterView.translatesAutoresizingMaskIntoConstraints = false
         monsterView.monster = self.monster
-        view.backgroundColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
+        view.backgroundColor = UIColor(
+            red: 204/255,
+            green: 204/255,
+            blue: 204/255,
+            alpha: 1.0
+        )
         self.navigationItem.rightBarButtonItem = shareButton
         self.navigationItem.leftBarButtonItem = backButton
     }

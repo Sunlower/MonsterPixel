@@ -20,14 +20,16 @@ class BookViewController: UIViewController {
         action: #selector(back)
     )
 
-    private var bookView = BookView()
+    public var bookView = BookView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         applyViewCode()
     }
 
+    // MARK: Função de voltar da Sheet View
     @objc func back() {
+        playSound(name: "mixkit-water-bubble-1317", exten: "wav")
         self.dismiss(animated: true)
     }
 
@@ -76,5 +78,4 @@ extension BookViewController: BookDelegate {
         viewController.modalTransitionStyle = .crossDissolve
         present(viewController, animated: true, completion: nil)
     }
-
 }

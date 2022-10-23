@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: Navegação da Home para o Grimório
+// MARK: Navegação da Home para o Grimório e pega os monstros para a CollectionView
 
 protocol HomeDelegate: AnyObject {
 

@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+//MARK: Modelo do monstro
 struct Monstro: Codable {
     var dataId = String()
 

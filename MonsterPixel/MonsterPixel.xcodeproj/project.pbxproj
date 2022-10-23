@@ -13,6 +13,9 @@
 		D68D763728FE4C1500347122 /* 04B_30__.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D68D763628FE4C1500347122 /* 04B_30__.ttf */; };
 		D68D763928FF129200347122 /* AVSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D763828FF129200347122 /* AVSound.swift */; };
 		D68D763C28FF1AF100347122 /* classic-arcade-video-game.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D68D763B28FF1AF000347122 /* classic-arcade-video-game.mp3 */; };
+		D68D763F28FF23B100347122 /* retro_8_bit_repeating_016.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D68D763D28FF23B100347122 /* retro_8_bit_repeating_016.mp3 */; };
+		D68D764028FF23B100347122 /* mixkit-water-bubble-1317.wav in Resources */ = {isa = PBXBuildFile; fileRef = D68D763E28FF23B100347122 /* mixkit-water-bubble-1317.wav */; };
+		D68D764229003AD700347122 /* DataManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D68D764129003AD700347122 /* DataManagerTest.swift */; };
 		D6A830F928F45679006C5F04 /* MonsterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A830F828F45679006C5F04 /* MonsterModel.swift */; };
 		D6A830FF28F45B7D006C5F04 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A830FE28F45B7D006C5F04 /* HomeView.swift */; };
 		D6A8310228F73897006C5F04 /* ViewCoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A8310128F73897006C5F04 /* ViewCoding.swift */; };
@@ -30,8 +33,6 @@
 		D6CEFE6D28F44D590098E2C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CEFE6C28F44D590098E2C5 /* Assets.xcassets */; };
 		D6CEFE7028F44D590098E2C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CEFE6E28F44D590098E2C5 /* LaunchScreen.storyboard */; };
 		D6CEFE7B28F44D5A0098E2C5 /* MonsterPixelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE7A28F44D5A0098E2C5 /* MonsterPixelTests.swift */; };
-		D6CEFE8528F44D5A0098E2C5 /* MonsterPixelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE8428F44D5A0098E2C5 /* MonsterPixelUITests.swift */; };
-		D6CEFE8728F44D5A0098E2C5 /* MonsterPixelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CEFE8628F44D5A0098E2C5 /* MonsterPixelUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,9 @@
 		D68D763628FE4C1500347122 /* 04B_30__.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = 04B_30__.ttf; sourceTree = "<group>"; };
 		D68D763828FF129200347122 /* AVSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSound.swift; sourceTree = "<group>"; };
 		D68D763B28FF1AF000347122 /* classic-arcade-video-game.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "classic-arcade-video-game.mp3"; sourceTree = "<group>"; };
+		D68D763D28FF23B100347122 /* retro_8_bit_repeating_016.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = retro_8_bit_repeating_016.mp3; sourceTree = "<group>"; };
+		D68D763E28FF23B100347122 /* mixkit-water-bubble-1317.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-water-bubble-1317.wav"; sourceTree = "<group>"; };
+		D68D764129003AD700347122 /* DataManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerTest.swift; sourceTree = "<group>"; };
 		D6A830F828F45679006C5F04 /* MonsterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterModel.swift; sourceTree = "<group>"; };
 		D6A830FE28F45B7D006C5F04 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D6A8310128F73897006C5F04 /* ViewCoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoding.swift; sourceTree = "<group>"; };
@@ -78,9 +82,7 @@
 		D6CEFE7128F44D590098E2C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6CEFE7628F44D590098E2C5 /* MonsterPixelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterPixelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CEFE7A28F44D5A0098E2C5 /* MonsterPixelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterPixelTests.swift; sourceTree = "<group>"; };
-		D6CEFE8028F44D5A0098E2C5 /* MonsterPixelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonsterPixelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6CEFE8428F44D5A0098E2C5 /* MonsterPixelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterPixelUITests.swift; sourceTree = "<group>"; };
-		D6CEFE8628F44D5A0098E2C5 /* MonsterPixelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterPixelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6CEFE8028F44D5A0098E2C5 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				D68D763B28FF1AF000347122 /* classic-arcade-video-game.mp3 */,
+				D68D763E28FF23B100347122 /* mixkit-water-bubble-1317.wav */,
+				D68D763D28FF23B100347122 /* retro_8_bit_repeating_016.mp3 */,
 			);
 			path = sounds;
 			sourceTree = "<group>";
@@ -177,7 +181,6 @@
 			children = (
 				D6CEFE5F28F44D580098E2C5 /* MonsterPixel */,
 				D6CEFE7928F44D5A0098E2C5 /* MonsterPixelTests */,
-				D6CEFE8328F44D5A0098E2C5 /* MonsterPixelUITests */,
 				D6CEFE5E28F44D580098E2C5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,7 +190,7 @@
 			children = (
 				D6CEFE5D28F44D580098E2C5 /* MonsterPixel.app */,
 				D6CEFE7628F44D590098E2C5 /* MonsterPixelTests.xctest */,
-				D6CEFE8028F44D5A0098E2C5 /* MonsterPixelUITests.xctest */,
+				D6CEFE8028F44D5A0098E2C5 /* .xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,17 +213,9 @@
 			isa = PBXGroup;
 			children = (
 				D6CEFE7A28F44D5A0098E2C5 /* MonsterPixelTests.swift */,
+				D68D764129003AD700347122 /* DataManagerTest.swift */,
 			);
 			path = MonsterPixelTests;
-			sourceTree = "<group>";
-		};
-		D6CEFE8328F44D5A0098E2C5 /* MonsterPixelUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D6CEFE8428F44D5A0098E2C5 /* MonsterPixelUITests.swift */,
-				D6CEFE8628F44D5A0098E2C5 /* MonsterPixelUITestsLaunchTests.swift */,
-			);
-			path = MonsterPixelUITests;
 			sourceTree = "<group>";
 		};
 		D6CEFE9328F44D8A0098E2C5 /* Aplication */ = {
@@ -317,7 +312,7 @@
 			);
 			name = MonsterPixelUITests;
 			productName = MonsterPixelUITests;
-			productReference = D6CEFE8028F44D5A0098E2C5 /* MonsterPixelUITests.xctest */;
+			productReference = D6CEFE8028F44D5A0098E2C5 /* .xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -373,6 +368,8 @@
 				D6CEFE7028F44D590098E2C5 /* LaunchScreen.storyboard in Resources */,
 				D68D763728FE4C1500347122 /* 04B_30__.ttf in Resources */,
 				D6CEFE6D28F44D590098E2C5 /* Assets.xcassets in Resources */,
+				D68D763F28FF23B100347122 /* retro_8_bit_repeating_016.mp3 in Resources */,
+				D68D764028FF23B100347122 /* mixkit-water-bubble-1317.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6CEFE7B28F44D5A0098E2C5 /* MonsterPixelTests.swift in Sources */,
+				D68D764229003AD700347122 /* DataManagerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,8 +448,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6CEFE8728F44D5A0098E2C5 /* MonsterPixelUITestsLaunchTests.swift in Sources */,
-				D6CEFE8528F44D5A0098E2C5 /* MonsterPixelUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +604,7 @@
 				INFOPLIST_FILE = MonsterPixel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,8 +630,7 @@
 				INFOPLIST_FILE = MonsterPixel/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,9 +692,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QW8X8R78UC;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_MAP_FILE_PATH = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MonsterPixelUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "";
+				PRODUCT_NAME = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -716,9 +712,11 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QW8X8R78UC;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_MAP_FILE_PATH = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ieda.MonsterPixelUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_MODULE_NAME = "";
+				PRODUCT_NAME = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

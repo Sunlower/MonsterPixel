@@ -24,7 +24,7 @@ class BookView: UIView {
         return label
     }()
 
-    private var collection: UICollectionView = {
+    public var collection: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         layout.minimumLineSpacing = 20
@@ -33,7 +33,12 @@ class BookView: UIView {
                                  height: UIScreen.main.bounds.width/2-15)
         let collection = UICollectionView(frame: .zero,
                                           collectionViewLayout: layout)
-        collection.backgroundColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
+        collection.backgroundColor = UIColor(
+            red: 204/255,
+            green: 204/255,
+            blue: 204/255,
+            alpha: 1.0
+        )
         collection.register(CollectionViewCell.self,
                             forCellWithReuseIdentifier: CollectionViewCell.identifier)
         return collection
@@ -93,45 +98,70 @@ extension BookView: ViewCodeConfiguration {
     func configureViews() {
         label.translatesAutoresizingMaskIntoConstraints = false
         collection.translatesAutoresizingMaskIntoConstraints = false
-        self.backgroundColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
+        self.backgroundColor = UIColor(
+            red: 204/255,
+            green: 204/255,
+            blue: 204/255,
+            alpha: 1.0
+        )
         collection.dataSource = self
         collection.delegate = self
         monsters = DataManager.shared.monstros()
         collection.reloadData()
+        setupLongGestureRecognizerOnCollection()
     }
-
 }
 
 // MARK: - Collection DataSource
 
 extension BookView: UICollectionViewDataSource {
+
+    // MARK: Número de itens
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         return monsters.count
     }
 
+    // MARK: Retorna a célula customizada
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collection.dequeueReusableCell(
             withReuseIdentifier: CollectionViewCell.identifier,
             for: indexPath) as? CollectionViewCell else {
-            fatalError("DequeueReusableCell failed while casting")
+            fatalError("DequeueReusableCell failed while casting"
+            )
         }
 
         let monster = monsters[indexPath.row]
         cell.monsterImage = monster
-        cell.backgroundColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1.0)
+        cell.backgroundColor = UIColor(
+            red: 204/255,
+            green: 204/255,
+            blue: 204/255,
+            alpha: 1.0
+        )
         return cell
     }
 
+    // MARK: Quando a célula é clicada
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
-
+        playSound(name: "mixkit-water-bubble-1317", exten: "wav")
         let monster = monsters[indexPath.row]
         delegate?.navigation(monster: monster)
-        // closure
-        // delegate
-        // binding view - controller
+    }
+
+    @objc public func handleLongPress(gestureRecognizer: UILongPressGestureRecognizer) {
+        if (gestureRecognizer.state != .began) {
+            return
+        }
+
+        let gesture = gestureRecognizer.location(in: collection)
+
+        if let indexPath = collection.indexPathForItem(at: gesture) {
+            playSound(name: "mixkit-water-bubble-1317", exten: "wav")
+            delete(cell: collection.cellForItem(at: indexPath)!)
+        }
     }
 
 }
@@ -139,5 +169,31 @@ extension BookView: UICollectionViewDataSource {
 // MARK: - Collection Delegate
 
 extension BookView: UICollectionViewDelegate {
+    func delete(cell: UICollectionViewCell) {
 
+        if let indexPath = collection.indexPath(for: cell) {
+
+            let dataManager = DataManager.shared.persistentContainer.viewContext
+            let monster = monsters[indexPath.item]
+            monsters.remove(at: indexPath.item)
+            dataManager.delete(monster)
+            collection.deleteItems(at: [indexPath])
+            collection.reloadData()
+            DataManager.shared.save()
+
+        }
+    }
+}
+
+extension BookView: UIGestureRecognizerDelegate {
+    public func setupLongGestureRecognizerOnCollection() {
+        let longPressedGesture = UILongPressGestureRecognizer(
+            target: self,
+            action: #selector(handleLongPress(gestureRecognizer:))
+        )
+        longPressedGesture.minimumPressDuration = 0.5
+        longPressedGesture.delegate = self
+        longPressedGesture.delaysTouchesBegan = true
+        collection.addGestureRecognizer(longPressedGesture)
+    }
 }

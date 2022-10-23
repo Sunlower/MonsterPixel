@@ -8,6 +8,7 @@
 import Foundation
 
 // MARK: Extensão para organizar a estrutura do projeto
+// adiciona na view, seta as constrains e configura elas
 
 protocol ViewCodeConfiguration {
     func buildHierarchy()
