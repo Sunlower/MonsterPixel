@@ -63,7 +63,7 @@ final class MonsterPixelTests: XCTestCase {
         homeMonster.viewDidLoad()
         homeMonster.navigation()
         bookMonster = BookViewController()
-        bookMonster.bookView.collectionView(bookMonster.bookView.collection.self, didSelectItemAt: bookMonster.bookView.collection.indexPath(for: UICollectionViewCell())!)
+//        bookMonster.bookView.collectionView(bookMonster.bookView.collection.self, didSelectItemAt: bookMonster.bookView.collection.indexPath(for: UICollectionViewCell())!)
     }
 
     func testPerformanceExample() throws {
